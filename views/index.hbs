@@ -16,7 +16,7 @@
                 </div>
 
                  <div class="col-md-9">
-                    <form method="POST" action ="">
+                    <form method="POST" action =""  onsubmit = "return kiemtraduso(event)" >
                         <div class="row">
                             <div class="col-md-4">
                                 <input class="mb-1" onblur="kiemtrasothuc(this.value,this.name)" type="text" id="num1"
@@ -34,7 +34,7 @@
                             <label for="nhan">Nhân</label>
                             <input id="phepchia" type="radio" id="chia" name="pheptinh" value="/" {{check4}}>
                             <label for="chia">Chia</label><br>
-                            <input type="submit" value="Tính" onclick="return kiemtraduso(event)" id="submit">
+                            <input type="submit" value="Tính" id="submit">
                         </div>
                         </div>
                     </form>
