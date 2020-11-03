@@ -32,12 +32,16 @@ function thongbao(event) {
 }
 
 function kiemtraduso(event) {
+
     if (document.getElementById("num1").value == "" || document.getElementById("num2").value == "") {
         thong_bao.innerHTML = "Thông báo:";
         thong_bao1.innerHTML = "Chưa điền đủ hai số để thực hiện phép tính".fontcolor("red");
         event.preventDefault();
         return false;
     }
+
+   
+
     thong_bao.innerHTML = "";
     thong_bao1.innerHTML = "";
     return tinhtoan(event);
@@ -59,33 +63,13 @@ function tinhtoan(event) {
         return false;
     }
 
-    const x = getElementById(num1);
-    const y = getElementById(num2);
-  
-    if(kiemtrasothuc(x.value,x.name) === false || kiemtrasothuc(y.value,y.name) === false)
+    const x = document.getElementById("num1");
+    const y = document.getElementById("num2");
+    if(kiemtrasothuc(x.value,x.name) == false || kiemtrasothuc(y.value,y.name) == false)
     {
         event.preventDefault();
         return false;
     }
 
-    // kq = 0;
-    // if (dau == "+") {
-    //     kq = num1 + num2;
-    // }
-    // else if (dau == "-") {
-    //     kq = num1 - num2;
-    // }
-    // else if (dau == "*") {
-    //     kq = num1 * num2;
-    // }
-    // else if (dau == "/") {
-    //     if (num2 === 0) {
-    //         kq = "Không hợp lệ"
-    //     }
-    //     else {
-    //         kq = num1 / num2;
-    //     }
-    // }
-    // document.getElementById("ketqua").value = kq;
     return true;
 }
