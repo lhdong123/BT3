@@ -59,6 +59,15 @@ function tinhtoan(event) {
         return false;
     }
 
+    const x = getElementById(num1);
+    const y = getElementById(num2);
+  
+    if(kiemtrasothuc(x.value,x.name) === false || kiemtrasothuc(y.value,y.name) === false)
+    {
+        event.preventDefault();
+        return false;
+    }
+
     // kq = 0;
     // if (dau == "+") {
     //     kq = num1 + num2;

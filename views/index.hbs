@@ -26,13 +26,13 @@
                                 <input class="mb-1" type="text" id="ketqua" name = "result" value ="{{result}}">
                         </div>
                         <div class="col-md-4 offset-3">
-                            <input id="phepcong" type="radio" id="cong" name="pheptinh" value="+" checked = "false">
+                            <input id="phepcong" type="radio" id="cong" name="pheptinh" value="+" {{check1}}>
                             <label for="cong">Cộng</label>
-                            <input id="pheptru" type="radio" id="tru" name="pheptinh" value="-" checked = "false">
+                            <input id="pheptru" type="radio" id="tru" name="pheptinh" value="-" {{check2}}>
                             <label for="tru">Trừ</label><br>
-                            <input id="phepnhan" type="radio" id="nhan" name="pheptinh" value="*" checked = "false">
+                            <input id="phepnhan" type="radio" id="nhan" name="pheptinh" value="*" {{check3}}>
                             <label for="nhan">Nhân</label>
-                            <input id="phepchia" type="radio" id="chia" name="pheptinh" value="/" checked = "false">
+                            <input id="phepchia" type="radio" id="chia" name="pheptinh" value="/" {{check4}}>
                             <label for="chia">Chia</label><br>
                             <input type="submit" value="Tính" onclick="return kiemtraduso(event)">
                         </div>
